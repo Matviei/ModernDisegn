@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ModernDisegn"
+        xmlns:extensions="clr-namespace:ModernDisegn.Core"
         xmlns:viewModel="clr-namespace:ModernDisegn.MVVM.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" 
@@ -97,6 +98,8 @@
 
             <StackPanel>
                 <RadioButton Content="VPN"
+                             extensions:Extensions.Icon="&#128737;"
+                             Padding="5.6 , 3.5 ,8 ,2"
                              FontSize="16"
                              FontWeight="Normal"
                              Foreground="LightGray"
