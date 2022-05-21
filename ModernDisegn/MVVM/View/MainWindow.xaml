@@ -45,7 +45,7 @@
             </Grid>
             
         </Border>
-
+<!--Создание выдвижной панели-->
         <Border Width="48" 
                 HorizontalAlignment="Left"
                 Background="#252525">
