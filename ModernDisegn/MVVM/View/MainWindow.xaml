@@ -46,7 +46,7 @@
             
         </Border>
 <!--Создание выдвижной панели-->
-        <Border Width="48" 
+        <!--<Border Width="48" 
                 HorizontalAlignment="Left"
                 Background="#252525">
 
@@ -78,7 +78,7 @@
                         </EventTrigger>
                     </Style.Triggers>
                 </Style>
-            </Border.Style>
+            </Border.Style>-->
 
             <StackPanel>
                 <RadioButton Content="VPN"
