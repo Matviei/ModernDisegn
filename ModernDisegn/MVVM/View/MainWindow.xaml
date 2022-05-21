@@ -104,13 +104,15 @@
                              FontWeight="Normal"
                              Foreground="LightGray"
                              IsChecked="True"
-                             Command="{Binding ShowProtectedView}"/>
+                             Command="{Binding ShowProtectedView}" Cursor="Hand"/>
                 <RadioButton Content="VPN"
                              FontSize="16"
                              FontWeight="Normal"
                              Foreground="LightGray"
                              />
                 <RadioButton Content="Settings"
+                             extensions:Extensions.Icon="⚙"
+                             Padding="5 2.5 8 0"
                              FontSize="16"
                              FontWeight="Normal"
                              Foreground="LightGray"
