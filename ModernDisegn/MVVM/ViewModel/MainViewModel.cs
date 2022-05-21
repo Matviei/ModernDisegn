@@ -17,6 +17,10 @@ namespace ModernDisegn.MVVM.ViewModel
         public RelayCommand MaximizeWindowCommand { get; set; }
         public RelayCommand MinimizaWindowCommand { get; set; }
 
+        public RelayCommand ShowProtectedView { get; set; }
+        public RelayCommand ShowSettingsView { get; set; }
+        
+        
         private object _currentView;
 
         public object CurrentView
@@ -30,12 +34,13 @@ namespace ModernDisegn.MVVM.ViewModel
         }
 
         public ProtectionViewModel ProtectionVM { get; set; }
-
+        public SettingViewModel SettingVM { get; set; }
 
 
         public MainViewModel()
         {
             ProtectionVM = new ProtectionViewModel();
+            SettingVM = new SettingViewModel();
             CurrentView = ProtectionVM;
 
             Application.Current.MainWindow.MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
@@ -51,6 +56,9 @@ namespace ModernDisegn.MVVM.ViewModel
                 else Application.Current.MainWindow.WindowState = WindowState.Maximized;
             });
             MinimizaWindowCommand = new RelayCommand(o => { Application.Current.MainWindow.WindowState = WindowState.Minimized; });
+
+            ShowProtectedView = new RelayCommand(o => { CurrentView = ProtectionVM; });
+            ShowSettingsView = new RelayCommand(o => { CurrentView = SettingVM; });
         }
     }
 }

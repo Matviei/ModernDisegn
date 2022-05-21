@@ -94,15 +94,18 @@
                              FontSize="16"
                              FontWeight="Normal"
                              Foreground="LightGray"
-                             IsChecked="True"/>
+                             IsChecked="True"
+                             Command="{Binding ShowProtectedView}"/>
                 <RadioButton Content="VPN"
                              FontSize="16"
                              FontWeight="Normal"
-                             Foreground="LightGray"/>
-                <RadioButton Content="VPN"
+                             Foreground="LightGray"
+                             />
+                <RadioButton Content="Settings"
                              FontSize="16"
                              FontWeight="Normal"
-                             Foreground="LightGray"/>
+                             Foreground="LightGray"
+                             Command="{Binding ShowSettingsView}"/>
             </StackPanel>
         </Border>
 
