@@ -45,9 +45,15 @@
                             HorizontalAlignment="Right"
                             Margin="0 0 4 0">
 
-                    <Button Content="🗕" Command="{Binding MinimizaWindowCommand}"/>
-                    <Button Content="🗖" Command="{Binding MaximizeWindowCommand}"/>
-                    <Button Content="🗙" Command="{Binding ShutdownWindowCommand}"/>
+                    <Button Content="🗕" 
+                            Command="{Binding MinimizaWindowCommand}"
+                            Padding="0 0 0 3"/>
+                    <Button Content="🗖" 
+                            Padding="0 0 0 3"
+                            Command="{Binding MaximizeWindowCommand}"/>
+                    <Button Content="🗙" 
+                            Padding="0 0 0 3"
+                            Command="{Binding ShutdownWindowCommand}"/>
                     
                 </StackPanel>
                 
