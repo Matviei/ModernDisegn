@@ -29,13 +29,17 @@ namespace ModernDisegn.MVVM.ViewModel
             }
         }
 
-
+        public ProtectionViewModel ProtectionVM { get; set; }
 
 
 
         public MainViewModel()
         {
+            ProtectionVM = new ProtectionViewModel();
+            CurrentView = ProtectionVM;
+
             Application.Current.MainWindow.MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+         
             MoveWindowCommand = new RelayCommand(o=>{Application.Current.MainWindow.DragMove();});
             ShutdownWindowCommand = new RelayCommand(o => { Application.Current.Shutdown(); });
             MaximizeWindowCommand = new RelayCommand(o =>

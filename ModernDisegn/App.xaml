@@ -2,8 +2,18 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:ModernDisegn"
+             xmlns:view="clr-namespace:ModernDisegn.MVVM.View"
+             xmlns:vms="clr-namespace:ModernDisegn.MVVM.ViewModel"
              StartupUri="MVVM/View/MainWindow.xaml">
     <Application.Resources>
-         
+         <ResourceDictionary>
+             <ResourceDictionary.MergedDictionaries>
+
+             </ResourceDictionary.MergedDictionaries>
+
+             <DataTemplate DataType="{x:Type vms:ProtectionViewModel}">
+                <view:ProtectionView/>
+             </DataTemplate>
+         </ResourceDictionary>
     </Application.Resources>
 </Application>
