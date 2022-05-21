@@ -96,6 +96,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Themes\MenuButton.Nord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\TitlebarButton.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
